@@ -1,9 +1,10 @@
     <h1>Welcome to the index page</h1>
 
-    <%@posts.each do |post|%>
+    <%@leaders.each do |leader|%>
       <div>
-        <h3><%= post[:title]%></h3>
-        <p><%= post[:body]%></p>
+        <h3><%= leader.name%></h3>
+        <p><%= leader.global_bonus%></p>
+        <p><%= leader.active_bonus%></p>
       </div>
 
 

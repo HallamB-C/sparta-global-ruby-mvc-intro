@@ -1,1 +1,1 @@
-# sparta-global-ruby-mvc-intro
+# sparta-global-ruby-database-2

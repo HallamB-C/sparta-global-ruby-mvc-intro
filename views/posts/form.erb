@@ -1,0 +1,26 @@
+<form class="" action="/<%= @leader.id %>" method="POST">
+
+  <div class="">
+    <label>Name</label>
+    <input type="text" name="title" placeholder="Enter a title" value="<%= @leader.name %>">
+  </div>
+
+  <div class="">
+    <label>Global bonus</label>
+    <textarea name="body" placeholder="The leader's global bonus"><%= @leader.global_bonus %></textarea>
+  </div>
+
+  <div class="">
+    <label>Active bonus</label>
+    <textarea name="body" placeholder="The leader's active / local bonus"><%= @leader.active_bonus %></textarea>
+  </div>
+
+
+  <div class="">
+    <input type="submit" name="" value="Save post">
+  </div>
+
+  <%if(@leader.id) %>
+  <input type="hidden" name="_method" value="PUT">
+  <%end%>
+</form>

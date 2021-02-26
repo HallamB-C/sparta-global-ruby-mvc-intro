@@ -1,0 +1,9 @@
+
+    <h1><%= @leader.name %></h1>
+    <p><%= @leader.global_bonus %></p>
+    <p><%= @leader.active_bonus %></p>
+
+    <form action="/<%= @leader.id %>" method="POST">
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" value="Delete">
+    </form>
